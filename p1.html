@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="script.js">
+    <title>Registration Page</title>
+</head>
+<body>
+<div>
+    <div class="container">
+        <form class="registration-form" id="registrationForm">
+            <h2>Registration</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="button" onclick="register()">Register</button>
+        </form>
+
+        <form class="login-form" id="loginForm" style="display:none;">
+            <h2>Login</h2>
+
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="login-username" required>
+
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="login-password" required>
+
+            <button type="button" onclick="login()">Login</button>
+        </form>
+
+        <p id="toggleFormText">Don't have an account? <a href="#" onclick="toggleForm()">Register here</a></p>
+    </div>
+    <a href="index.html" class="cta-button">Назад</a>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
